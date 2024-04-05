@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 import './styles.css';
 import { NewTodoForm } from './NewTodoForm';
 import { Hello } from './Hello';
@@ -43,7 +43,7 @@ export default function App() {
 	}
 
 	return (
-		<>
+		<Fragment>
 			<Hello />
 			<NewTodoForm onSubmit={addTodo} />
 			<h1 className="header">To Do</h1>
@@ -52,6 +52,6 @@ export default function App() {
 				toggleTodo={toggleTodo}
 				deleteTodo={deleteTodo}
 			/>
-		</>
+		</Fragment>
 	);
 }

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { Fragment } from 'react';
 export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
 	return (
-		<>
+		<Fragment>
 			<li>
 				<label>
 					<input
@@ -20,7 +21,7 @@ export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
 					Delete
 				</button>
 			</li>
-		</>
+		</Fragment>
 	);
 }
 TodoItem.propTypes = {
